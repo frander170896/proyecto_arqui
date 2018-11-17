@@ -13,7 +13,7 @@
 		}
 
 		function conect() {
-		    if(!($con = mysqli_connect("localhost","root",""))){
+		    if(!($con = mysqli_connect("localhost","root","root"))){
 			    echo "Error to conect the Data Base";
 				exit();
 		    }

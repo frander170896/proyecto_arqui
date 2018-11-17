@@ -85,6 +85,22 @@
 	      		';
 	      	}
 		}
+		function ObtenerGastos(){
+			$dtGasto = new dtGasto;
+			$array = [];
+			$lista = $dtGasto->getGastosDashboard();
+			$formato = ['Tipo Gasto', 'Monto'];
+			array_push($array,$formato);
+
+			foreach ($lista as $gasto)
+			{
+				$formato = [$gasto->getIdCategoria(),intval($gasto->getAmountExpense())];
+				array_push($array,$formato);
+			}
+			
+			 echo json_encode($array);
+		 }
+ 
     }
 
 	$op = $_POST['opcion'];
@@ -96,6 +112,8 @@
         $control->eliminarGasto();
     } else if($op == 3){
         $control->modificarGasto();
-   }
+  	} else if($op == 4){
+		$control->ObtenerGastos();
+	}
 
 ?>

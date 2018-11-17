@@ -10,8 +10,12 @@
 	<script lang="JavaScript" src="../js/bootstrap/js/bootstrap.min.js"></script>
 	<script lang="JavaScript" src="../js/jsAcciones.js"></script>
 	<script lang="JavaScript" src="../js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      
+    </script>
 </head>
-<body>
+<body onload="cargarPagina('../interface/fDashBoard/fDashBoard.php')">
 	<br>
 	<div class="container">
 		<nav class="navbar navbar-inverse">
@@ -22,11 +26,11 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span> 
 					</button>
-					<a class="navbar-brand" href="#">Expensify</a>
+					<a class="navbar-brand" onclick="cargarPagina('../interface/fDashBoard/fDashBoard.php')">Expensify</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li><a href="#" onclick="')">Gastos</a></li> 
+						<li><a href="#" onclick="cargarPagina('../interface/fGasto/fGestionarGasto.php')">Gastos</a></li> 
 						<li><a href="#" onclick="cargarPagina('../interface/fCategoria/fGestionarCategoria.php')">Categorías</a></li>
 					</ul>
 				</div>
@@ -35,7 +39,8 @@
 
 		<hr>
 		
-		<div id="contenedor"></div>
+		<div id="contenedor">
+		</div>
 	</div>
 </body>
 </html>

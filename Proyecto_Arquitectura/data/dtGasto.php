@@ -68,6 +68,38 @@
 				}
 			}
 		}
+
+		function getGastosDashboard(){
+		
+			$con = new dtConnection;
+			
+			$lista = array();
+			
+			if($con->conect()){
+			
+				$query = "SELECT B.nombreCategoria AS idCategoria, SUM(a.amountExpense) as amountExpense FROM tbExpense A INNER JOIN tbCategoria B ON A.IdCategoria = B.IdCategoria GROUP BY B.nombreCategoria";
+				
+				$result = mysqli_query($con->getCon(), $query);
+				
+				while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
+				
+					$Gasto = new dGasto;
+								
+                    $Gasto->setIdCategoria($row['idCategoria']);
+                    $Gasto->setAmountExpense($row['amountExpense']);
+               
+					array_push($lista, $Gasto);
+				}
+
+				mysqli_close($con->getCon());
+
+				if (!$lista){
+					return false;
+				} else {
+					return $lista;
+				}
+			}
+		}
 		
 		function getGasto($idExpense){
 	
