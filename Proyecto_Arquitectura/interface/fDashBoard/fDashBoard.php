@@ -9,27 +9,9 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
 </head>
-<body>
-<style>
-    .chart {
-    width: 100%; 
-    
-    
-
-
-    
-    }
-    .row {
-    margin:0 !important;
-    }
-</style>
-<div class="container">
-  <div class="row">
-     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <div id="donutchart" class="chart" ></div>  
-     </div>
-  </div>
-</div>
-      
-</body>
+    <body>
+        <h1>DashBoard</h1>
+        <h2>Informarción sobre los gasto reportados.</h2>
+        <div id="donutchart" style="width:100%;height:500px;"></div>  
+    </body>
 </html>
