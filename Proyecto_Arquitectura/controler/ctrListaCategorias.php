@@ -6,6 +6,8 @@
 		
 		function ctrListaCategorias(){
 		}
+
+		function __destruct() {}
 	
 		function obtenerCategorias(){
 		

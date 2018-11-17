@@ -40,8 +40,8 @@
 								echo "<tr>";
 								echo 	"<td>".$Categoria->getIdCategoria()."</td>";
 								echo 	"<td>".$Categoria->getNombreCategoria()."</td>";
-								echo 	"<td style=\"text-align:center;\"><button class=\"btn btn-success\" type=\"button\" onclick=\"paginaModificarCategoria('".$Categoria->getIdCategoria()."')\"><span class='glyphicon glyphicon-pencil'></span> Modificar</button></td>";
-								echo 	"<td style=\"text-align:center;\"><button class=\"btn btn-danger\" type=\"button\" onclick=\"eliminarCategoria('".$Categoria->getIdCategoria()."')\"><span class='glyphicon glyphicon-trash'></span> Eliminar</button></td>";
+								echo 	"<td style=\"text-align:center;\"><button class=\"btn btn-success\" type=\"button\" onclick=\"paginaModificarCategoria('".$Categoria->getIdCategoria()."')\"><span class='glyphicon glyphicon-pencil'></span> </button></td>";
+								echo 	"<td style=\"text-align:center;\"><button class=\"btn btn-danger\" type=\"button\" onclick=\"eliminarCategoria('".$Categoria->getIdCategoria()."')\"><span class='glyphicon glyphicon-trash'></span> </button></td>";
 								echo "</tr>";
 								
 							}

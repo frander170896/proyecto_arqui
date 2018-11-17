@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<title>Módulo Categoría</title>
-		<script lang="JavaScript" src="../js/jsCategoria.js"></script>
+		<title>Módulo Gastos</title>
+		<script lang="JavaScript" src="../js/jsGasto.js"></script>
 	</head>
 	<body>
 		<div id="datos" class="container">
 			<?php
-				include ("../../interface/fCategoria/fInsertarCategoria.php");
+				include ("../../interface/fGasto/fInsertarGasto.php");
 			?>		
 		</div>
 
@@ -25,7 +26,7 @@
 
 		<div id="lista" class="container">		
 			<?php
-				include ("../../interface/fCategoria/fListaCategorias.php");
+				include ("../../interface/fGasto/fListaGastos.php");
 			?>		
 		</div>
 	</body>

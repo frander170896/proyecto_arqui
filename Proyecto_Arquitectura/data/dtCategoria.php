@@ -41,7 +41,7 @@
 				
 				$result = mysqli_query($con->getCon(), $query);
 				
-				while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
+				while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 				
 					$Categoria = new dCategoria;
 					
@@ -50,7 +50,7 @@
 					
 					array_push($lista, $Categoria);
 				}
-
+				
 				mysqli_close($con->getCon());
 
 				if (!$lista){
@@ -72,7 +72,7 @@
 				
 				$result = mysqli_query($con->getCon(), $query);
 				
-				while($row = mysqli_fetch_array($result)){
+				while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
 
 					$Categoria = new dCategoria;
 				

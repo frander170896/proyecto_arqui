@@ -4,7 +4,9 @@
 	  
 	  	var $conect;
 	  
-	    function dtConnection(){}
+		function dtConnection(){}
+
+		function __destruct() {}
 		 
 		function getCon(){
 			return $this->conect;
