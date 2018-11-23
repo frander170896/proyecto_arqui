@@ -2,6 +2,7 @@ function cargarPagina (url) {
   $('#contenedor').load(url);
 }
 
+/* Generador de Gráfica */
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
@@ -35,5 +36,7 @@ function drawChart() {
 	var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
 	chart.draw(data, options);
 }
+
+
 
 

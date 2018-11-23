@@ -1,3 +1,12 @@
+
+<?Php 
+	session_start();
+	
+	if(!$_SESSION) {
+		header("location:../interface/fLogin/fLogin.php");
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +42,9 @@
 						<li><a href="#" onclick="cargarPagina('../interface/fGasto/fGestionarGasto.php')">Gastos</a></li> 
 						<li><a href="#" onclick="cargarPagina('../interface/fCategoria/fGestionarCategoria.php')">Categorías</a></li>
 					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../interface/fLogin/fCerrarSesion.php"><span class="glyphicon glyphicon-log-out"></span> Cerrar Sesión</a></li>
+    				</ul>
 				</div>
 			</div>
 		</nav>
